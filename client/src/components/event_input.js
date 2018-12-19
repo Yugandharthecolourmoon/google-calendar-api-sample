@@ -53,7 +53,7 @@ class EventInput extends Component {
             <div className="col-md-3">
               <div className="form-group">
                 <label>Event Date</label>
-                <DateTime utc={true} value={new Date()} onChange={value => {
+                <DateTime utc={true} value={this.state.startTime} onChange={value => {
                   this.setState({startTime: (new Date(value)).getTime()})
                 }}/>
               </div>
