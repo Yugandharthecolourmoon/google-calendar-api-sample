@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "colourmoon-demo-225906",
+  "private_key_id": "dc57de686426496c720b2d05d2b74dda5165aca0",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDE5v6t/2xTuvXX\nM+VGMzKx4OnGDt8X2AIwvoHeNWgMbdHfm1tcn506OnTvPd/v+YVv5nIfJRlDo3A4\nvTSXfyYuuHVC6Yr/sWhH6mYf1k4JBA8++p0GWeP0oBYFhn6mKlEcLgXdtXta1oS/\nLdWbWIq7EARuFSl5knZRFLPACgbGCadmpgFMXL/PfBhKDT6++5w4qR2rnLQiGZAz\n29PbOiTWLLuClZfB+TUCR0QBKBdvXP7I0MisjVrE1tO9jr3lcoQFGJFnetb20GXS\niqFBOhi5HgULw45m7UH9GK+kDfXkjZcghysxeS4JxcgpenXw1N4QTU4Hy2CAZGf5\nlbnblgDxAgMBAAECggEAD+MzmYaKjxb+zyZ40XlAFeo38qswhRQA2T4F7JASnS4f\nSROYA5k9bn1ZAhTUBOD1S1okyy6LI1IEtA9QNwkjY5GupH+Dn64I5ASdyOPZ2BBj\nyokeMmz+X7arEDcR8QZpFQUBpCoIkgPNIj/ohGhYiU95jAhZGF4g/dnVxyEH+uKY\nP/Fvkar9HxjeQtC0LcHq08/XxA4NY/MVpZ7y2wJoHp1O47cSDJoITqXxXPumlzh0\nfEciCJ3DtwQIncMbtwzGYFpR4RhcUjFkRq318rIWsxlUn73swZmAJwub+UZ8HXdQ\nkuC5PV5jdOsfhrS6c1Y/GUvXzYNwrRcTXxudr7uIIQKBgQDsQrROwmEG6fn1pQSV\nTuMCzmeIwAcxewv1yj0zZI9wqAl1NB0Aej7Q0nBB9VkdmflNBNJouglpHYOqaJfg\n4P88IbHNiea6kgEauBFAl4Yg6Q8qHhs3A2fWQiJSLm9R1NW1YagWOe8Sxk00aSnP\naRZBqTQ5c+e4qHv9uelmFhxsQwKBgQDVWnh/p0ss+65qHYghL4KwYA6sWzrQZr1b\nP/T4SLYrzdOdAqkcVLLLj5XxQDzLODHxDWdppErNZ28QdVEH5v4OUiIbOmuSAcYS\njiqIha7dnO8cVCqkGHiOLEG9qJ+KsjcCLAZi562yiN1x9+EN7x4ndnJ92v53Z/4U\nvsECRyikuwKBgB2TTBb/5j2DVLMXcTdvpKNZS0SnJT9gc+LU6kxgrkQgBO8TEv5Y\nTzy82yimmf1GpRqrG9vYTg1GkJDofvq7r7fLUAK23JdGZ7T8jcxUK4o7IpbXJfkB\nCCKeLMW04mKQDiCilPQTVIY5JLkG4SEBurOFhvAaPkuza7Ibb8hDxFMZAoGAOzAG\n/7rkYw1LPIsGydYJVm6/g1cnwMrPuzHJ/tsFFq/aBdPIIGDq3QfvW+crNmFXkXzb\ndHYsfkE0kYdKPHv7fPOSHKWfU/kD/v/LkuYrNbWkq+I5lh5ny2FBt6DA6dQ46HRY\nLTYCfOX1MPnISHpOjjoQ1xNaxrtlxFGK79vXzaMCgYEAkwC53uC+z41KrWiayGCV\n6XlQwmS4v3o5zmwKmWvj8XuTeO4vNugJNrU2+E+y7NkOEtvLJDkffHLDS5c1eCQM\nrcijnCbGqBiySfLl6+ChkV6bfw5z++67gtK1jO1iIzXT8R5oaCQIBfei6fW4xj2S\nw1c7BpqgVDFv2fcHYaLSUJw=\n-----END PRIVATE KEY-----\n",
+  "client_email": "sidewalk-sample@colourmoon-demo-225906.iam.gserviceaccount.com",
+  "client_id": "101243149117596017872",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/sidewalk-sample%40colourmoon-demo-225906.iam.gserviceaccount.com"
+}
