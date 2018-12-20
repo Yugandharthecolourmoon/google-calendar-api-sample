@@ -1,3 +1,12 @@
+require('es6-promise').polyfill();
+require('isomorphic-fetch');
+
+/**
+ * To get list of events
+ * @param milliseconds Date in milliseconds
+ * @param callback Callback function
+ * @returns {Promise<Response | never>}
+ */
 const index = (milliseconds, callback) => {
   return fetch(`/api/events`, {
     method: 'POST',
@@ -11,6 +20,12 @@ const index = (milliseconds, callback) => {
       .then(callback);
 };
 
+/**
+ * To create new event
+ * @param body Event body
+ * @param callback Callback Function
+ * @returns {Promise<Response | never>}
+ */
 const create = (body, callback) => {
   return fetch(`/api/event`, {
     method: 'POST',
@@ -24,6 +39,12 @@ const create = (body, callback) => {
       .then(callback);
 };
 
+/**
+ * To delete event
+ * @param id Event Id
+ * @param callback Callback Function
+ * @returns {Promise<Response | never>}
+ */
 const destroy = (id, callback) => {
   return fetch(`/api/event/${id}`, {
     method: 'DELETE',
@@ -33,6 +54,11 @@ const destroy = (id, callback) => {
       .then(callback);
 };
 
+/**
+ * To check the response status and handle errors
+ * @param response Fetch response
+ * @returns {*}
+ */
 const checkStatus = (response) => {
   if (response.status >= 200 && response.status < 300) {
     return response;
