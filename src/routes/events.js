@@ -1,9 +1,8 @@
 /**
  * This contains all of the events routes.
  */
-
 const {google} = require('googleapis');
-const googleAuth = require('../config/google-auth');
+const {googleAuth, attendees} = require('../config/google-auth');
 const calendar = google.calendar({version: 'v3', googleAuth});
 
 /**
@@ -69,7 +68,7 @@ const insert = (req, res, next) => {
       recurrence: [
         'RRULE:FREQ=DAILY;COUNT=2'
       ],
-      attendees: [],
+      attendees:attendees,
       reminders: {
         useDefault: false,
         overrides: [

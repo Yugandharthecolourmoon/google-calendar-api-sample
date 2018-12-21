@@ -5,8 +5,14 @@
  * @type {{file: string, scopes: string[]}}
  */
 const config = {
-  file: 'colourmoon-demo-225906-02dad4d71539.json',
-  scopes: ['https://www.googleapis.com/auth/calendar']
+  type: 'service-account',// service-account or oauth2-client
+  service_account_file: 'service-account.json',
+  oauth2_client_file: 'oauth2-client.json',
+  attendees: ['yugandhar@thecolourmoon.com'],
+  scopes: [
+    'https://www.googleapis.com/auth/calendar',
+    'https://www.googleapis.com/auth/calendar.events'
+  ]
 };
 
 module.exports = config;
