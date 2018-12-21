@@ -22,7 +22,7 @@ const EventList = ({events}) => {
                 <tr>
                   <th>Event date</th>
                   <th>Summary</th>
-                  <th>Location</th>
+                  <th>Attendees</th>
                   <th>Action</th>
                 </tr>
                 </thead>
