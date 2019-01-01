@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import * as moment from 'moment';
 import './App.css';
+import Utils from './Utils';
 
 import EventList from './components/event_list';
 import EventInput from './components/event_input';
@@ -66,10 +67,11 @@ class App extends Component {
       newDate = new Date();
     }
     const date = moment(newDate).format("YYYY-MM-DD");
+    const offset = Utils.getTimezone();
     window.gapi.client.calendar.events.list({
       calendarId: 'primary',
-      timeMin: date + 'T00:00:00+05:30',
-      timeMax: date + 'T23:59:59+05:30',
+      timeMin: date + 'T00:00:00' + offset,
+      timeMax: date + 'T23:59:59' + offset,
       showDeleted: false,
       singleEvents: true,
       maxResults: 10,
