@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import DateTime from 'react-datetime';
 import * as moment from 'moment';
+import 'moment-timezone';
+import Utils from '../Utils';
 
 class EventInput extends Component {
   constructor(props) {
@@ -27,18 +29,19 @@ class EventInput extends Component {
         alert("Event summary is required.");
         return;
       }
-      const eventDate = moment(this.state.startTime).format();
+      const offset = Utils.getTimezone();
+      const eventDate = moment(this.state.startTime).format('YYYY-MM-DDTHH:mm:ss') + offset;
       window.gapi.client.calendar.events.insert({
         calendarId: 'primary',
         resource: {
           summary: this.state.summary,
           start: {
             dateTime: eventDate,
-            timeZone: 'Asia/Kolkata',
+            timeZone: moment.tz.guess()
           },
           end: {
             dateTime: eventDate,
-            timeZone: 'Asia/Kolkata',
+            timeZone: moment.tz.guess()
           },
           recurrence: [
             'RRULE:FREQ=DAILY;COUNT=2'
@@ -60,6 +63,7 @@ class EventInput extends Component {
         this.props.onFetchClick(this.state.startTime);
         window.alert('New event added successfully.');
       }, error => {
+        console.log(error);
         window.alert('Unable to create event.');
       })
     }
